@@ -1,0 +1,129 @@
+.hero {
+  position: relative;
+  height: calc(100vh - 80px);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-background {
+  position: absolute;
+  /* text-align: start; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #000;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  border: none;
+  border-radius: 2.5rem;
+  padding: 1.25rem 2.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #000;
+}
+
+.btn-primary:hover {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+}
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.profile {
+  position: relative;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  /* box-shadow: 0 0 0 4px #fff, 0 0 0 5px #246df5; */
+  transition: 0.2s;
+}
+
+.content {
+  /* bottom: 75px; */
+  max-width: 400px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.profile:hover .content {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-15%) translateY(0px);
+}
+
+ 
+.slider{
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+}
+@keyframes scroll {
+  0%{
+      transform: translateX(0);
+  }
+  100%{
+      transform: translateX(calc(-250px * 5));
+  }
+}
+
+.slide-track{
+  display: flex;
+  width: calc(250px * 5);
+  animation: scroll 20s linear infinite;
+}
+.slide{
+  height: 200px;
+  width: 250px;
+  align-items: center;
+  padding: 15px;
+  /* perspective: 100px; */
+}
+img{
+  width: 100%;
+  height: 100%;
+}
