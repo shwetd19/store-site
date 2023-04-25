@@ -1,0 +1,30 @@
+/* h1 {
+  color: #fff;
+} */
+ /* I have doubt Here If I remove the comment in h1 tag If's applying to all the text why */
+
+ 
+.jlr {
+  font-size: 0;
+}
+
+.jlr .jlr_item {
+  font-size: 1rem;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 6px;
+}
+
+.jlr img.jlr_img {
+  height: 200px;
+  opacity: 1;
+}
+
+.jlr img.jlr_loaded {
+  -webkit-transition: opacity 1s ease-in;
+  -moz-transition: opacity 1s ease-in;
+  -o-transition: opacity 1s ease-in;
+  -ms-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
+  opacity: 1;
+}

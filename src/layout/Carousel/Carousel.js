@@ -1,3 +1,5 @@
+import "./Carousel.css";
+
 function Carousel() {
   return (
     <>
@@ -7,7 +9,7 @@ function Carousel() {
             <div class="container d-flex justify-content-center align-items-center">
               <div class="profile m-1">
                 <div class="slide">
-                  <img src="assets\imgs\1.png" />
+                  <img src="imgs\1.png" />
                 </div>
                 <div class="content position-absolute p-2 mt-5">
                   <div class="header d-flex align-items-center">
@@ -21,7 +23,7 @@ function Carousel() {
 
               <div class="profile m-1">
                 <div class="slide">
-                  <img src="assets\imgs\2.png" />
+                  <img src="imgs\2.png" />
                 </div>
                 <div class="content position-absolute p-2 mt-5">
                   <div class="header d-flex align-items-center">
@@ -35,7 +37,7 @@ function Carousel() {
 
               <div class="profile m-1">
                 <div class="slide">
-                  <img src="assets\imgs\3.png" />
+                  <img src="imgs\3.png" />
                 </div>
                 <div class="content position-absolute p-2 mt-5">
                   <div class="header d-flex align-items-center">
@@ -49,7 +51,7 @@ function Carousel() {
 
               <div class="profile m-1">
                 <div class="slide">
-                  <img src="assets\imgs\4.png" />
+                  <img src="imgs\4.png" />
                 </div>
                 <div class="content position-absolute p-2 mt-5">
                   <div class="header d-flex align-items-center">
@@ -63,7 +65,7 @@ function Carousel() {
 
               <div class="profile m-1">
                 <div class="slide">
-                  <img src="assets\imgs\5.jpeg" />
+                  <img src="imgs\5.jpeg" />
                 </div>
                 <div class="content position-absolute p-2 mt-5">
                   <div class="header d-flex align-items-center">
